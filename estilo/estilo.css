@@ -79,11 +79,18 @@ nav ul li a:hover{
     background-size: cover;
 }
 .header-intro{
-    width: 500px;
+    display: flex;
+    flex-direction: row;
     position: absolute;
-    left: 18%;
-    top: 50%;
-    transform: translate(-18%, -50%);
+    left: 10%;
+    top: 35%;
+    transform: translate(-10%, -35%);
+}
+.header-intro img{
+    width: 60%;
+    margin-left: 10vw;
+    margin: 2vw 10vw;   
+    transform: rotate(-25deg);   
 }
 .header-intro h1{
     font-size: 44px;
@@ -127,7 +134,9 @@ nav ul li a:hover{
     width: 50%;
 }
 .sobre-img img{
-    width: 600px;
+    width: 80%;
+    border-radius: 2px;
+    box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.4);
 }
 .sobre-txt{
     width: 45%;
@@ -142,7 +151,15 @@ nav ul li a:hover{
     color: #00e676;
 }
 .sobre-txt h3{
+    font-size: 1.5em;
+    font-style: italic;
     color: #00e676;
+}
+.sobre-txt h3 span{
+    font-size: 0.8em;
+    font-weight: 600;
+    font-style: normal;
+    color: whitesmoke;
 }
 .sobre-txt p{
     width: 500px;
@@ -176,6 +193,7 @@ nav ul li a:hover{
     position: relative;
 }
 .projetos-img{
+    margin-top: 20px;
     width: 100%;
     height: 60%;
 }
