@@ -240,6 +240,18 @@ nav ul li a:hover{
     font-weight: 600;
 }
 
+#contato button{
+    height: 45px;
+    width: 150px;
+    background-color: #00e676;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 
 

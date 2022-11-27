@@ -97,11 +97,18 @@
             <h1>Entre em Contato</h1>
             <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
         </div>
-        <form>
-            <input type="text" placeholder="Digite seu nome"/>
-            <input type="email" placeholder="Digite seu e-mail"/>
-            <textarea placeholder="Escreva sua mensagem aqui..."></textarea>
-            <input type="submit" value="Continuar"/>
+        <form action="https://formsubmit.co/kevindearo@gmail.com" method="POST">
+
+            <input type="text" name="name" placeholder="Digite seu nome" required>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <textarea rows="10" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="_subject" value="Novo contato, Portifólio!">
+            <input type="text" name="_honey" style="display:none;">
+
         </form>
 
     </section>
