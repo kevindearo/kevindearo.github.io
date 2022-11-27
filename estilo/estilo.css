@@ -163,7 +163,11 @@ nav ul li a:hover{
 }
 .sobre-txt p{
     width: 500px;
+    font-weight: 500;
     color: whitesmoke;
+}
+#ver-mais{
+    display: none;
 }
 /*------------Projetos-----------*/
 
