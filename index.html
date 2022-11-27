@@ -8,6 +8,7 @@
     <title>Kevin de Aro</title>
     <link rel="stylesheet" type="text/css" href="/estilo/estilo.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--AOS Library - adicionar animações entre sections-->
+    <script type="text/javascript" src="/scripts/script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
             <ul class="menu">
                 <li><a href="#header">Home</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -27,65 +28,74 @@
     </section>
 
     <div class="header-intro" data-aos="fade-left">
-        <h3>Procurando por um profissional de TI?</h3>
-        <h1>Sou <span>Kevin</span> de Aro</h1>
-        <p>Eletrecista enrolador / Estudande de Sistemas de Informação / Apaixonado por tecnologia</p>
-        <a class="header-btn" href="#contato">Contato</a>
+        <div>
+            <h3>Procurando por um profissional de TI?</h3>
+            <h1>Sou <span>Kevin</span> de Aro</h1>
+            <p>Eletrecista enrolador / Estudande de Sistemas de Informação / Apaixonado por tecnologia</p>
+            <a class="header-btn" href="#contato">Contato</a>
+        </div>
+        <div>
+            <img src="/imagens/Kevin-name.svg" alt="imagem assinatura">
+        </div>
     </div>
 
     <section id="sobre">
         <div class="sobre-img" data-aos="fade-down">
-            <img src="#" alt="Sobre mim, imagem">
+            <img src="/imagens/job-change.webp" alt="Sobre mim, imagem">
         </div>
 
         <div class="sobre-txt" data-aos="fade-up">
             <h2>Os <span>Desafios</span> da troca de carreira.</h2>
-            <h3>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.</h3>
-            <p>Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
-            <button class="header-btn">Leia Mais</button>
+            
+            <h3>“Quando você tem medo e faz mesmo assim, isso é coragem.” <span>– Neil Gaiman</span></h3>
+            
+            <p>Formando em Sistemas de informação, buscando o sonho de trabalhar com tecnologia, área que desde sempre almejei<span id="dots">...</span><span id="ver-mais">Atualmente trabalhando como eletricista enrolador, esta que foi minha primeira profissão, onde iniciei como auxiliar, aprendi em um curto período e após pouco tempo passei a realizar o processo completo de produção das peças, porém esta é uma área que aprendi por necessidade, e durante toda a minha vida, sempre estive envolvido com tecnologia, estudando e buscando novas tendencias. Após anos de trabalho, hoje já mais velho, consegui tempo e dinheiro para cursar uma faculdade e iniciar essa nova jornada, visando ingressar nesta nova carreira profissional.</span></p>
+            
+            
+            <button onclick="expandFunction()" class="header-btn" id="aboutBtn">Ver Mais</button>
         </div>
     </section>
 
     <section id="projetos">
         <div class="projetos-heading">
             <h1>Meus Projetos</h1>
-            <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
+            <p>Assim como esta pagina continuara sendo atualiza e melhorada conforme adquiro mais conhecimentos. Novos projetos serão mostrados abaixo, conforme forem concluidos.</p>
         </div>
         <div class="projetos-container">
 
             <div class="projetos-box" data-aos="fade-right">
                 <div class="projetos-img">
-                    <img src="#" alt="imagem projeto 1">
+                    <img src="/imagens/em breve.svg" alt="imagem projeto 1">
                 </div>
 
                 <div class="projetos-txt">
-                    <h4>Meu Projeto</h4>
+                    <h4>Lorem Ipsum</h4>
                     <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
-                    <a href="#" class="header-btn">Saiba Mais</a>
+                    <a href="https://github.com/kevindearo" target="_blank" class="header-btn">Saiba Mais</a>
                 </div>
             </div>
         
             <div class="projetos-box" data-aos="fade-down">
                 <div class="projetos-img">
-                    <img src="#" alt="imagem projeto 2">
+                    <img src="/imagens/em breve.svg" alt="imagem projeto 2">
                 </div>
 
                 <div class="projetos-txt">
-                    <h4>Meu Projeto</h4>
+                    <h4>Lorem Ipsum</h4>
                     <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
-                    <a href="#" class="header-btn">Saiba Mais</a>
+                    <a href="https://github.com/kevindearo" target="_blank" class="header-btn">Saiba Mais</a>
                 </div>
             </div>
         
             <div class="projetos-box" data-aos="fade-left">
                 <div class="projetos-img">
-                    <img src="#" alt="imagem projeto 3">
+                    <img src="/imagens/em breve.svg" alt="imagem projeto 3">
                 </div>
 
                 <div class="projetos-txt">
-                    <h4>Meu Projeto</h4>
+                    <h4>Lorem Ipsum</h4>
                     <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
-                    <a href="#" class="header-btn">Saiba Mais</a>
+                    <a href="https://github.com/kevindearo" target="_blank" class="header-btn">Saiba Mais</a>
                 </div>
             </div>
         
@@ -95,13 +105,20 @@
     <section id="contato">
         <div class="projetos-heading">
             <h1>Entre em Contato</h1>
-            <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
+            <p>Ficou interessado? escreva para mim. Ficarei feliz em responder.</p>
         </div>
-        <form>
-            <input type="text" placeholder="Digite seu nome"/>
-            <input type="email" placeholder="Digite seu e-mail"/>
-            <textarea placeholder="Escreva sua mensagem aqui..."></textarea>
-            <input type="submit" value="Continuar"/>
+        <form action="https://formsubmit.co/kevindearo@gmail.com" method="POST">
+
+            <input type="text" name="name" placeholder="Digite seu nome" required>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <textarea rows="10" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="_subject" value="Novo contato, Portifólio!">
+            <input type="text" name="_honey" style="display:none;">
+
         </form>
 
     </section>
@@ -111,6 +128,11 @@
     <script>
       AOS.init();
     </script>
+
+    <footer>
+        <p> ©2022 Desenvolvido por Kevin Marcelo de Aro.</p>
+    </footer>
+
 </body>
 
 </html>
