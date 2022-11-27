@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+/*---------Suavizar scroll da pagina-------------*/
+html{
+    scroll-behavior: smooth;
+}
+/*----------------- Reset CSS padrão e fonte ------------*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4A148C;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+
+/*----------------Navegação-----------------*/
+.logo img{
+    width: 25%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #4A148C;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 17px;
+    display: flex;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    transition: 0.6s ease;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #00e676;
+    box-shadow: 0px 5px 30px rgba(0, 255, 128, 0.4);
+}
+
+/*--------------Header------------*/
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+.header-intro{
+    width: 500px;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translate(-18%, -50%);
+}
+.header-intro h1{
+    font-size: 44px;
+    margin: 0px;
+    letter-spacing: 3px;
+}
+.header-intro h1 span{
+    color: #00e676;
+}
+.header-intro{
+    color: whitesmoke;
+}
+.header-btn{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00e676;
+    box-shadow: 0px 2px 20px rgba(0, 255, 128, 0.4);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.6s ease-in-out;
+}
+.header-btn:hover{
+    background-color: #00ff22;
+}
+/*----------Sobre------------*/
+#sobre{
+    width: 100%;
+    height: 110vh;
+    background-color: #6A1B9A;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+.sobre-img{
+    width: 50%;
+}
+.sobre-img img{
+    width: 600px;
+}
+.sobre-txt{
+    width: 45%;
+    color: whitesmoke;
+}
+.sobre-txt h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sobre-txt h2 span{
+    color: #00e676;
+}
+.sobre-txt h3{
+    color: #00e676;
+}
+.sobre-txt p{
+    width: 500px;
+    color: whitesmoke;
+}
+/*------------Projetos-----------*/
+
+#projetos{
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    box-sizing: border-box;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+.projetos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projetos-box{
+    background-color: whitesmoke;
+    width: 370px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.projetos-img{
+    width: 100%;
+    height: 60%;
+}
+.projetos-img img{
+    width: 100%;
+    height: 100%;
+}
+.projetos-txt{
+    color: black;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projetos-txt p{
+    text-align: center;
+}
+.projetos-heading{
+    text-align: center;
+    color: whitesmoke;
+    margin: 20px 0px;
+}
+.projetos-heading h1{
+    font-size: 2.5rem;
+}
+/*----------------Contato-------------*/
+#contato{
+    background-color: #6A1B9A;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+#contato form{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contato input,#contato textarea{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#contato form textarea{
+    height: 150px;
+}
+#contato form input[type="submit"]{
+    height: 45px;
+    width: 150px;
+    background-color: #00e676;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+
+.topbar{
+    background-color: aqua;
+}
+
+.topbar-nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(26, 18, 34);
+}
+
+.topbar-nav li{
+    float: left;
+}
+
+.topbar-nav li a {
+    display: block;
+    color: rgb(162, 75, 75);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.topbar-nav a{
+    display: block;
+    padding: 8px;
+} */
